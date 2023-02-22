@@ -6,7 +6,8 @@ label{
 
   label "built-in"
   customWorkspace "/mnt/ganesh"
-  sh "mvn clean install"
+  sh "sudo yum install maven -y"
+  //sh "mvn"
 
 }
 
