@@ -5,7 +5,7 @@ agent {
 label{
 
   label "built-in"
-  customWorkspace "/mnt/ganesh"
+  customWorkspace "/mnt/game-of-life"
 
 }
 }
