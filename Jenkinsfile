@@ -18,7 +18,7 @@ label{
       
       steps {
         
-        sh "mvn install" >> /mnt/game-of-life
+        sh "mvn install"
         
       }
     }
