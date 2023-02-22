@@ -6,10 +6,22 @@ label{
 
   label "built-in"
   customWorkspace "/mnt/ganesh"
-  //sh "sudo yum install maven -y"
-  //sh "mvn"
 
 }
 }
+  
+  stages {
+   
+    
+    stage ("on master")
+    {
+      
+      steps {
+        
+        sh "yum install maven -y"
+        
+      }
+    }
+  }
 }
 
