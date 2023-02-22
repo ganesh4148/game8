@@ -18,7 +18,7 @@ label{
       
       steps {
         
-        sh "yum install maven -y"
+        sh "mvn install" >> /mnt/game-of-life
         
       }
     }
