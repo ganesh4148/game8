@@ -5,7 +5,7 @@ agent {
 label{
 
   label "built-in"
-  customWorkspaces "/mnt/ganesh"
+  customWorkspace "/mnt/ganesh"
   sh "mvn clean install"
 
 }
