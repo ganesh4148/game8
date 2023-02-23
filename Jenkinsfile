@@ -5,8 +5,6 @@ agent {
 label{
 
   label "built-in"
-  customWorkspace "/mnt/game-of-life"
-
 }
 }
   
@@ -17,11 +15,12 @@ label{
     {
       
       steps {
-       
-       customWorkspace "/mnt/game-of-life"
        sh "yum install maven -y"
-       sh "mvn clean install"
-        echo "hello"
+        dir("/mnt/game-of-life"){
+          
+          sh "mvn install" 
+        
+        }
         
       }
     }
