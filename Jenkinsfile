@@ -5,9 +5,7 @@ agent {
 label{
 
   label "built-in"
-  sh "sudo yum install maven -y"
   customWorkspace "/mnt/game-of-life"
-  sh "sudo mvn clean install"
 
 }
 }
@@ -20,6 +18,9 @@ label{
       
       steps {
        
+       customWorkspace "/mnt/game-of-life"
+       sh "yum install maven -y"
+       sh "mvn clean install"
         echo "hello"
         
       }
