@@ -17,11 +17,12 @@ label{
     {
       
       steps {
-        
-        sh "mvn install"
+        sh "yum install maven -y"
+        sh "mvn clean install"
         
       }
     }
+       
   }
 }
 
